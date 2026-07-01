@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# UltimateUI Web Editor
 
-## Getting Started
+A community-driven web editor for the [UltimateUI PaperMC plugin](https://builtbybit.com/resources/ultimate-ui.105345/) by **Xqedii**. This project aims to mirror the in-game editor experience with better performance and accessibility, right in your browser.
 
-First, run the development server:
+Built with Next.js 16, React 19, shadcn/ui components, and Tailwind CSS 4.
+
+---
+
+## Requirements
+
+- [Node.js](https://nodejs.org/) v20 or later
+- [pnpm](https://pnpm.io/) (recommended) — or npm/yarn
+
+---
+
+## Installation
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+# Clone the repository
+git clone https://github.com/SLNE-Development/ultimateui-webeditor.git
+cd ultimateui-webeditor
+
+# Install dependencies
+pnpm install
+
+# Start the development server
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Updating
 
-## Learn More
+```bash
+# Pull the latest changes
+git pull
 
-To learn more about Next.js, take a look at the following resources:
+# Install any new or updated dependencies
+pnpm install
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Restart the dev server
+pnpm dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+If you are running a production build, rebuild after updating:
 
-## Deploy on Vercel
+```bash
+pnpm build
+pnpm start
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Contributing
+
+Contributions are welcome from the community. Here is how to get started:
+
+1. **Fork** the repository on GitHub.
+2. **Create a branch** for your feature or fix:
+    ```bash
+    git checkout -b feat/your-feature-name
+    ```
+3. **Make your changes.** Keep PRs focused - one feature or fix per PR.
+4. **Run the linter** before committing:
+    ```bash
+    pnpm lint
+    ```
+5. **Open a Pull Request** against `master` with a clear description of what you changed and why.
+
+### Guidelines
+
+- Use shadcn/ui components where possible — avoid pulling in new UI libraries without discussion.
+- Keep editor behaviour consistent with the in-game UltimateUI editor.
+- Open an issue first for large features so the direction can be agreed on before you invest time.
+
+---
+
+## Credits
+
+- **Xqedii** — original author and developer of the [UltimateUI PaperMC plugin](https://builtbybit.com/resources/ultimate-ui.105345/)
+- All community contributors who have helped build and improve this web editor
+
+---
+
+## License
+
+This project is community-maintained and not officially affiliated with or endorsed by the original plugin author.
