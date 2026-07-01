@@ -1,5 +1,6 @@
 import Providers from "@/app/providers";
 import { Toaster } from "@/components/ui/sonner";
+import ThemeSwitcher from "@/components/utils/theme-switcher";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inter } from "next/font/google";
@@ -38,10 +39,12 @@ export default function RootLayout({
 				"font-sans",
 				inter.variable,
 			)}
+			suppressHydrationWarning
 		>
 			<body className="min-h-full flex flex-col">
 				<Providers>{children}</Providers>
 				<Toaster />
+				<ThemeSwitcher />
 			</body>
 		</html>
 	);
