@@ -1,0 +1,224 @@
+name: Scoreboard
+blocks:
+- type: rounded
+  id: block
+  name: Block
+  layer: 1.0
+  opacity: 106
+  color: '000000'
+  unicode: 
+  position:
+    x: 1632.0
+    y: 398.0
+  size:
+    width: 264.0
+    height: 35.0
+  rounding:
+    unicode:
+      tl: <#000000>
+      tr: <#000000>
+      br: <#000000>
+      bl: <#000000>
+  visible: true
+  locked: false
+  aligned: right
+- type: text
+  id: text
+  name: Enter text
+  layer: 2.0
+  opacity: 255
+  color: ffffff
+  text: <font:default><#ffb617>&lᴜʟᴛɪᴍᴀᴛᴇ ᴜɪ
+  align: center
+  position:
+    x: 1701.0
+    y: 405.5
+  size:
+    width: 128.0
+    height: 128.57142857142856
+  visible: true
+  locked: false
+  aligned: right
+- type: text
+  id: text
+  name: Enter text
+  layer: 2.0
+  opacity: 255
+  color: ffffff
+  text: <font:default><#dbdbdb>⌚ %localtime_time_dd.MM.yyyy% [%localtime_time_HH:mm:ss%]
+  align: left
+  position:
+    x: 1949.0
+    y: 453.5
+  size:
+    width: 128.0
+    height: 128.57142857142856
+  visible: true
+  locked: false
+  aligned: right
+  text-wrap: 500
+- type: text
+  id: text
+  name: Enter text
+  layer: 2.0
+  opacity: 255
+  color: ffffff
+  text: '<font:default><#24ff2b>☄ &fᴘʟᴀʏᴇʀ: <#24ff2b>%player_name%'
+  align: left
+  position:
+    x: 1648.0
+    y: 491.0
+  size:
+    width: 128.0
+    height: 128.57142857142856
+  visible: true
+  locked: false
+  aligned: right
+- type: text
+  id: text
+  name: Enter text
+  layer: 2.0
+  opacity: 255
+  color: ffffff
+  text: '<font:default><#f2c622>★ &fᴄʟᴀɴ: <#f2c622>None'
+  align: left
+  position:
+    x: 1648.0
+    y: 511.5
+  size:
+    width: 128.0
+    height: 128.57142857142856
+  visible: true
+  locked: false
+  aligned: right
+- type: text
+  id: text
+  name: Enter text
+  layer: 2.0
+  opacity: 255
+  color: ffffff
+  text: '<font:default><#ff5496>🪓 &fᴊᴏʙ: <#ff5496>None'
+  align: left
+  position:
+    x: 1648.0
+    y: 532.5
+  size:
+    width: 128.0
+    height: 128.57142857142856
+  visible: true
+  locked: false
+  aligned: right
+- type: text
+  id: text
+  name: Enter text
+  layer: 2.0
+  opacity: 255
+  color: ffffff
+  text: '<font:default><#f94fff>⌚ &fᴛɪᴍᴇ: <#f94fff>0s'
+  align: left
+  position:
+    x: 1648.0
+    y: 554.5
+  size:
+    width: 128.0
+    height: 128.57142857142856
+  visible: true
+  locked: false
+  aligned: right
+- type: text
+  id: text
+  name: Enter text
+  layer: 2.0
+  opacity: 255
+  color: ffffff
+  text: '<font:default><#00a0fc>♢ &fɢᴇᴍs: <#00a0fc>0'
+  align: left
+  position:
+    x: 1650.0
+    y: 577.5
+  size:
+    width: 128.0
+    height: 128.57142857142856
+  visible: true
+  locked: false
+  aligned: right
+- type: text
+  id: text
+  name: Enter text
+  layer: 2.0
+  opacity: 255
+  color: ffffff
+  text: '<font:default> <#ffd82b>☀ &fᴏɴʟɪɴᴇ: <#ffd82b>%server_online% ᴘʟᴀʏᴇʀs'
+  align: left
+  position:
+    x: 1640.0
+    y: 610.5
+  size:
+    width: 128.0
+    height: 128.57142857142856
+  visible: true
+  locked: false
+  aligned: right
+- type: text
+  id: text
+  name: Enter text
+  layer: 2.0
+  opacity: 255
+  color: ffffff
+  text: <font:default>&aᴡᴡᴡ.ᴇxᴀᴍᴘʟᴇ.ᴄᴏᴍ
+  align: center
+  position:
+    x: 1700.0
+    y: 655.5
+  size:
+    width: 128.0
+    height: 128.57142857142856
+  visible: true
+  locked: false
+  aligned: right
+- type: rounded
+  id: block
+  name: Block
+  layer: 1.0
+  opacity: 106
+  color: '000000'
+  unicode: 
+  position:
+    x: 1632.0
+    y: 440.0
+  size:
+    width: 264.0
+    height: 202.0
+  rounding:
+    unicode:
+      tl: <#000000>
+      tr: <#000000>
+      br: <#000000>
+      bl: <#000000>
+  visible: true
+  locked: false
+  aligned: right
+- type: rounded
+  id: block
+  name: Block
+  layer: 1.0
+  opacity: 106
+  color: '000000'
+  unicode: 
+  position:
+    x: 1633.0
+    y: 648.0
+  size:
+    width: 264.0
+    height: 35.0
+  rounding:
+    unicode:
+      tl: <#000000>
+      tr: <#000000>
+      br: <#000000>
+      bl: <#000000>
+  visible: true
+  locked: false
+  aligned: right
+editor_meta:
+  image_layout_offset_v1: true

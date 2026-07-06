@@ -1,14 +1,14 @@
 "use client";
 
+import CreateUiDialog from "@/components/home/create-ui-dialog";
 import HomeCard from "@/components/home/home-card";
 import SelectPageDialog from "@/components/page/select-page-dialog";
 import { Button } from "@/components/ui/button";
 import { CirclePlus, ExternalLink, Pen } from "lucide-react";
-import Link from "next/link";
 
 export default function Home() {
 	return (
-		<div className="grid grid-cols-3 gap-2 justify-center items-center h-screen w-screen p-5">
+		<div className="grid h-screen w-screen grid-cols-3 items-center justify-center gap-2 p-5">
 			<HomeCard
 				icon={<Pen />}
 				title="Edit existing UI"
@@ -17,8 +17,8 @@ export default function Home() {
 					<SelectPageDialog
 						trigger={<Button>Edit</Button>}
 						title="Edit existing UI"
-						description="Edit the UI you previously created in the editor by clicking here"
-						footer={<div />}
+						description="Pick one of your saved UIs to continue editing."
+						mode="edit"
 					/>
 				}
 			/>
@@ -27,7 +27,7 @@ export default function Home() {
 				icon={<CirclePlus />}
 				title="Create UI"
 				description="Create a new UI that your players will be able to use while playing on the server"
-				button={<Link href={"#"} />}
+				button={<CreateUiDialog trigger={<Button>Create</Button>} />}
 			/>
 
 			<HomeCard
@@ -36,10 +36,10 @@ export default function Home() {
 				description="Open the UI and see how it looks after finishing it in the editor"
 				button={
 					<SelectPageDialog
-						trigger={<Button>Edit</Button>}
+						trigger={<Button>Open</Button>}
 						title="Open UI"
-						description="Open the UI and see how it looks after finishing it in the editor"
-						footer={<div />}
+						description="Pick a saved UI to preview it like in game."
+						mode="preview"
 					/>
 				}
 			/>

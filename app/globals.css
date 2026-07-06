@@ -131,3 +131,24 @@
     @apply font-sans;
   }
 }
+/* UltimateUI-Editor: interaktive Elemente im Preview-Modus */
+.uui-interactive {
+  cursor: pointer;
+}
+.uui-interactive:hover {
+  filter: brightness(1.35);
+}
+
+/* Minecraft-Look für Canvas-Texte (Monocraft, SIL OFL — public/fonts/) */
+@font-face {
+  font-family: "Monocraft";
+  src: url("/fonts/Monocraft.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Monocraft";
+  src: url("/fonts/Monocraft-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+}

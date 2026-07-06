@@ -1,0 +1,160 @@
+name: profile_rtp
+command: a
+animation:
+  open:
+    effect: profile_animation2
+  close:
+    usehud: true
+    effect: profile_animation2
+blocks:
+- type: image
+  id: img_overworld
+  name: overworld
+  layer: 2.0
+  opacity: 0
+  color: ffffff
+  align: left
+  visible: true
+  locked: false
+  image: overworld
+  position:
+    x: 381.0
+    y: 483.0
+  size:
+    width: 359.0
+    height: 211.0
+  image_partial_last_column: true
+  hover:
+    effect: profile_transform
+    image: overworld_active
+  image_offset_x: -0.01999999999999602
+- type: image
+  id: img_nether
+  name: nether
+  layer: 3.0
+  opacity: 0
+  color: ffffff
+  align: left
+  visible: true
+  locked: false
+  image: nether
+  position:
+    x: 760.0
+    y: 483.0
+  size:
+    width: 359.0
+    height: 211.0
+  image_partial_last_column: true
+  hover:
+    effect: profile_transform
+    image: nether_active
+  image_offset_x: -0.01999999999999602
+- type: image
+  id: img_end
+  name: end
+  layer: 4.0
+  opacity: 0
+  color: ffffff
+  align: left
+  visible: true
+  locked: false
+  image: end
+  position:
+    x: 1138.0
+    y: 483.0
+  size:
+    width: 359.0
+    height: 211.0
+  image_partial_last_column: true
+  hover:
+    effect: profile_transform
+    image: end_active
+  image_offset_x: -0.01999999999999602
+- type: rounded
+  id: block
+  name: Block
+  layer: 1.0
+  opacity: 106
+  color: '000000'
+  unicode: 
+  position:
+    x: 336.0
+    y: 394.0-65
+  size:
+    width: 1195.0
+    height: 412.0
+  rounding:
+    unicode:
+      tl: <#000000>
+      tr: <#000000>
+      br: <#000000>
+      bl: <#000000>
+  visible: true
+  locked: false
+  hover:
+    color: none
+- type: text
+  id: text
+  name: Enter text
+  layer: 5.0
+  opacity: 255
+  color: ffffff
+  font: default
+  align: center
+  text: Serverauswahl
+  position:
+    x: 816.0
+    y: 359.0
+  size:
+    width: 250.0
+    height: 250.0
+  visible: true
+  locked: false
+  hover:
+    color: none
+- type: text
+  id: text
+  name: 'Enter text #1'
+  layer: 6.0
+  opacity: 255
+  color: ffffff
+  font: default
+  align: left
+  text: Wähle den Server, den du betreten möchtest
+  position:
+    x: 718.0
+    y: 467.0-65
+  size:
+    width: 154.0
+    height: 154.28571428571428
+  text-wrap: 226
+  visible: true
+  locked: false
+  hover:
+    color: none
+- type: image
+  id: img_close
+  name: close
+  layer: 7.0
+  opacity: 0
+  color: ffffff
+  align: left
+  visible: true
+  locked: false
+  image: close
+  position:
+    x: 1459.0
+    y: 351.0
+  size:
+    width: 23.0
+    height: 23.0
+  hitbox:
+    x: 0
+    y: 30
+  actions:
+  - type: close
+    value: Close
+    name: Close
+  hover:
+    effect: profile_transform
+  image_offset_x: -29.019999999999996
