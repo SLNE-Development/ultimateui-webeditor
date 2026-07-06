@@ -1,0 +1,35 @@
+name: hud
+blocks:
+- type: block
+  id: block
+  name: Block
+  layer: 1.0
+  opacity: 83
+  color: 1a1a1a
+  unicode: 
+  position:
+    x: 497.0
+    y: 0.0
+  size:
+    width: 926.0
+    height: 67.0
+  visible: true
+  locked: false
+- type: text
+  id: text
+  name: Enter text
+  layer: 2.0
+  opacity: 255
+  color: ffffff
+  font: default
+  align: left
+  text: 100 / 200 - Enchanting Skill
+  position:
+    x: 704.0
+    y: 13.0
+  size:
+    width: 250.0
+    height: 250.0
+  visible: true
+  locked: false
+command: hud

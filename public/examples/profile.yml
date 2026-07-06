@@ -1,0 +1,564 @@
+name: profile
+command: profile
+animation:
+  open:
+    effect: profile_animation
+  close:
+    usehud: true
+    effect: profile_animation
+blocks:
+- type: rounded
+  id: block
+  name: Block
+  layer: -19.0
+  opacity: 106
+  color: '000000'
+  unicode: 
+  position:
+    x: 94.0
+    y: 209.0
+  size:
+    width: 463.0
+    height: 748.0
+  rounding:
+    unicode:
+      tl: <#000000>
+      tr: <#000000>
+      br: <#000000>
+      bl: <#000000>
+  visible: true
+  locked: false
+  hover:
+    color: none
+- type: image
+  id: img_crafting
+  name: icon1
+  layer: 1.0
+  opacity: 0
+  color: ffffff
+  align: left
+  visible: true
+  locked: false
+  image: crafting
+  position:
+    x: 121.0
+    y: 546.0
+  size:
+    width: 87.0
+    height: 87.0
+  hover:
+    effect: profile_transform
+    image: crafting_active
+- type: text
+  id: text
+  name: text1
+  layer: -10.0
+  opacity: 255
+  color: ffffff
+  font: default
+  align: center
+  text: Crafting
+  position:
+    x: 133.0
+    y: 634.0
+  size:
+    width: 120.0
+    height: 120.0
+  visible: true
+  locked: false
+  hover:
+    color: none
+- type: image
+  id: img_furnace
+  name: icon2
+  layer: -3.0
+  opacity: 0
+  color: ffffff
+  align: left
+  visible: true
+  locked: false
+  image: furnace
+  position:
+    x: 252.0
+    y: 546.0
+  size:
+    width: 87.0
+    height: 87.0
+  hover:
+    effect: profile_transform
+    image: furnace_active
+- type: text
+  id: text
+  name: text2
+  layer: -13.0
+  opacity: 255
+  color: ffffff
+  font: default
+  align: center
+  text: Furnace
+  position:
+    x: 264.0
+    y: 634.0
+  size:
+    width: 120.0
+    height: 120.0
+  visible: true
+  locked: false
+  hover:
+    color: none
+- type: image
+  id: img_enchant
+  name: icon3
+  layer: -7.0
+  opacity: 0
+  color: ffffff
+  align: left
+  visible: true
+  locked: false
+  image: enchant
+  position:
+    x: 384.0
+    y: 546.0
+  size:
+    width: 87.0
+    height: 87.0
+  hover:
+    effect: profile_transform
+    image: enchant_active
+- type: text
+  id: text
+  name: text3
+  layer: -16.0
+  opacity: 255
+  color: ffffff
+  font: default
+  align: center
+  text: Enchant
+  position:
+    x: 396.0
+    y: 634.0
+  size:
+    width: 120.0
+    height: 120.0
+  visible: true
+  locked: false
+  hover:
+    color: none
+- type: image
+  id: img_world
+  name: icon4
+  layer: 0.0
+  opacity: 0
+  color: ffffff
+  align: left
+  visible: true
+  locked: false
+  image: world
+  position:
+    x: 121.0
+    y: 678.0
+  size:
+    width: 87.0
+    height: 87.0
+  hover:
+    effect: profile_transform
+    image: world_active
+  actions:
+  - type: redirect
+    value: profile_rtp
+    name: profile_rtp
+- type: text
+  id: text
+  name: text4
+  layer: -11.0
+  opacity: 255
+  color: ffffff
+  font: default
+  align: center
+  text: RTP
+  position:
+    x: 133.0
+    y: 766.0
+  size:
+    width: 120.0
+    height: 120.0
+  visible: true
+  locked: false
+  hover:
+    color: none
+- type: image
+  id: img_portal
+  name: icon5
+  layer: -4.0
+  opacity: 0
+  color: ffffff
+  align: left
+  visible: true
+  locked: false
+  image: portal
+  position:
+    x: 252.0
+    y: 678.0
+  size:
+    width: 87.0
+    height: 87.0
+  hover:
+    effect: profile_transform
+    image: portal_active
+- type: text
+  id: text
+  name: text5
+  layer: -14.0
+  opacity: 255
+  color: ffffff
+  font: default
+  align: center
+  text: Portal
+  position:
+    x: 264.0
+    y: 766.0
+  size:
+    width: 120.0
+    height: 120.0
+  visible: true
+  locked: false
+  hover:
+    color: none
+- type: image
+  id: img_chest
+  name: icon6
+  layer: -8.0
+  opacity: 0
+  color: ffffff
+  align: left
+  visible: true
+  locked: false
+  image: chest
+  position:
+    x: 384.0
+    y: 678.0
+  size:
+    width: 87.0
+    height: 87.0
+  hover:
+    effect: profile_transform
+    image: chest_active
+- type: text
+  id: text
+  name: text6
+  layer: -17.0
+  opacity: 255
+  color: ffffff
+  font: default
+  align: center
+  text: Storage
+  position:
+    x: 396.0
+    y: 766.0
+  size:
+    width: 120.0
+    height: 120.0
+  visible: true
+  locked: false
+  hover:
+    color: none
+- type: image
+  id: img_store
+  name: icon7
+  layer: -1.0
+  opacity: 0
+  color: ffffff
+  align: left
+  visible: true
+  locked: false
+  image: store
+  position:
+    x: 122.0
+    y: 813.0
+  size:
+    width: 87.0
+    height: 87.0
+  hover:
+    effect: profile_transform
+    image: store_active
+- type: text
+  id: text
+  name: text7
+  layer: -12.0
+  opacity: 255
+  color: ffffff
+  font: default
+  align: center
+  text: Store
+  position:
+    x: 134.0
+    y: 901.0
+  size:
+    width: 120.0
+    height: 120.0
+  visible: true
+  locked: false
+  hover:
+    color: none
+- type: image
+  id: img_friends
+  name: icon8
+  layer: -5.0
+  opacity: 0
+  color: ffffff
+  align: left
+  visible: true
+  locked: false
+  image: friends
+  position:
+    x: 253.0
+    y: 813.0
+  size:
+    width: 87.0
+    height: 87.0
+  hover:
+    effect: profile_transform
+    image: friends_active
+- type: text
+  id: text
+  name: text8
+  layer: -15.0
+  opacity: 255
+  color: ffffff
+  font: default
+  align: center
+  text: Friends
+  position:
+    x: 265.0
+    y: 901.0
+  size:
+    width: 120.0
+    height: 120.0
+  visible: true
+  locked: false
+  hover:
+    color: none
+- type: image
+  id: img_settings
+  name: icon9
+  layer: -9.0
+  opacity: 0
+  color: ffffff
+  align: left
+  visible: true
+  locked: false
+  image: settings
+  position:
+    x: 385.0
+    y: 813.0
+  size:
+    width: 87.0
+    height: 87.0
+  hover:
+    effect: profile_transform
+    image: settings_active
+- type: text
+  id: text
+  name: text9
+  layer: -18.0
+  opacity: 255
+  color: ffffff
+  font: default
+  align: center
+  text: Settings
+  position:
+    x: 397.0
+    y: 901.0
+  size:
+    width: 120.0
+    height: 120.0
+  visible: true
+  locked: false
+  hover:
+    color: none
+- type: rounded
+  id: block
+  name: Block
+  layer: -20.0
+  opacity: 106
+  color: '000000'
+  unicode: 
+  position:
+    x: 93.0
+    y: 130.0
+  size:
+    width: 463.0
+    height: 65.0
+  rounding:
+    unicode:
+      tl: <#000000>
+      tr: <#000000>
+      br: <#000000>
+      bl: <#000000>
+  visible: true
+  locked: false
+  hover:
+    color: none
+- type: text
+  id: text
+  name: Enter text
+  layer: 2.0
+  opacity: 255
+  color: ffffff
+  font: default
+  align: center
+  text: Your Profile
+  position:
+    x: 217.0
+    y: 150.0
+  size:
+    width: 214.0
+    height: 214.28571428571428
+  visible: true
+  locked: false
+  hover:
+    color: none
+- type: block
+  id: item
+  name: Item
+  layer: 3.0
+  opacity: 255
+  color: ffffff
+  item: PLAYER_HEAD:%player%
+  unicode: 
+  position:
+    x: 221.0
+    y: 145.0
+  size:
+    width: 201.09336880956417
+    height: 201.09336880956417
+  visible: true
+  locked: false
+- type: text
+  id: text
+  name: Enter text
+  layer: -2.0
+  opacity: 255
+  color: ffffff
+  font: default
+  align: center
+  text: '%player%'
+  position:
+    x: 216.0
+    y: 376.0
+  size:
+    width: 214.0
+    height: 214.28571428571428
+  visible: true
+  locked: false
+  hover:
+    color: none
+- type: text
+  id: text
+  name: Enter text
+  layer: -6.0
+  opacity: 255
+  color: ffffff
+  font: default
+  align: center
+  text: '&7Lvl 10'
+  position:
+    x: 239.0
+    y: 415.0
+  size:
+    width: 163.0
+    height: 162.85714285714286
+  visible: true
+  locked: false
+  hover:
+    color: none
+- type: rounded
+  id: block
+  name: 'Block #1'
+  layer: 4.0
+  opacity: 255
+  color: 9c9c9c
+  unicode: 
+  position:
+    x: 168.0
+    y: 455.0
+  size:
+    width: 313.0
+    height: 30.0
+  rounding:
+    unicode:
+      tl: <#9c9c9c>
+      tr: <#9c9c9c>
+      br: <#9c9c9c>
+      bl: <#9c9c9c>
+  visible: true
+  locked: false
+  hover:
+    color: none
+- type: rounded
+  id: block
+  name: 'Block #1'
+  layer: 5.0
+  opacity: 255
+  color: 2794ff
+  unicode: 
+  position:
+    x: 168.0
+    y: 455.0
+  size:
+    width: 104.0
+    height: 30.0
+  rounding:
+    unicode:
+      tl: <#2794ff>
+      tr: <#2794ff>
+      br: <#2794ff>
+      bl: <#2794ff>
+  visible: true
+  locked: false
+  hover:
+    color: none
+- type: text
+  id: text
+  name: Enter text
+  layer: 6.0
+  opacity: 255
+  color: ffffff
+  font: default
+  align: center
+  text: '&f100/500'
+  position:
+    x: 264.0
+    y: 464.0
+  size:
+    width: 112.0
+    height: 111.42857142857143
+  visible: true
+  locked: false
+  hover:
+    color: none
+- type: image
+  id: img_close
+  name: close
+  layer: 7.0
+  opacity: 0
+  color: ffffff
+  align: left
+  visible: true
+  locked: false
+  image: close
+  hitbox:
+    x: 0
+    y: 30
+  position:
+    x: 489.0
+    y: 229.0
+  size:
+    width: 23.0
+    height: 23.0
+  actions:
+  - type: close
+    value: Close
+    name: Close
+  hover:
+    effect: profile_transform

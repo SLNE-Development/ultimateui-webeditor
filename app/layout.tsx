@@ -42,9 +42,11 @@ export default function RootLayout({
 			suppressHydrationWarning
 		>
 			<body className="min-h-full flex flex-col">
-				<Providers>{children}</Providers>
-				<Toaster />
-				<ThemeSwitcher />
+				<Providers>
+					{children}
+					<Toaster />
+					<ThemeSwitcher />
+				</Providers>
 			</body>
 		</html>
 	);

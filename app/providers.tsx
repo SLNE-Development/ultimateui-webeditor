@@ -12,7 +12,7 @@ export default function Providers({ children }: PropsWithChildren) {
 			defaultTheme="system"
 			disableTransitionOnChange
 		>
-			<TooltipProvider>{children}</TooltipProvider>;
+			<TooltipProvider>{children}</TooltipProvider>
 		</ThemeProvider>
 	);
 }
